@@ -1,0 +1,127 @@
+.cover {
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  max-height: 740px;
+}
+
+.cover__background {
+  margin: 0 auto;
+
+  max-width: 1184px;
+  max-height: 740px;
+
+  width: 100%;
+  transition: 0.4s ease-in all;
+  min-height: 254px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.cover__background:hover {
+  opacity: 0.3;
+}
+
+.cover__contact {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+}
+
+.cover__title {
+  font-family: "Inter Bold";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #fffdfd;
+  margin: 0 auto 32px;
+}
+
+.cover__text {
+  font-family: "Inter Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.cover__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0278fe;
+  border-radius: 4px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #ffffff;
+
+  width: 100%;
+  height: 48px;
+  max-width: 198px;
+
+  border: none;
+  outline: none;
+  grid-row-start: 3;
+  grid-area: button;
+  text-decoration: none;
+
+  margin: 32px auto 0;
+
+  transition: 0.4s ease-in all;
+}
+
+.cover__button:hover,
+.cover__background:hover {
+  background: #0063d2;
+}
+
+@media screen and (max-width: 1001px) {
+  .cover__background {
+    width: 100%;
+    min-height: 746px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cover__background {
+    width: 100%;
+    min-height: 254px;
+    max-width: 321.26px;
+  }
+
+  .cover__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 109%;
+    margin: 0 auto 16px;
+  }
+
+  .cover__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+  }
+
+  .cover__button {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    margin: 16px auto 0;
+  }
+}
