@@ -210,7 +210,10 @@
 
   .places__button {
     max-width: 288px;
-    max-height: 48px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     margin: 0 auto;
   }
 }

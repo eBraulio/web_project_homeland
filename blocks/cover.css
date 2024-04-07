@@ -5,6 +5,11 @@
   max-height: 740px;
 }
 
+.cover__container {
+  margin: 0 auto;
+  max-width: 1184px;
+}
+
 .cover__background {
   margin: 0 auto;
 
@@ -18,7 +23,7 @@
   opacity: 0.8;
 }
 
-.cover__background:hover {
+.cover__container:hover .cover__background {
   opacity: 0.3;
 }
 
@@ -80,12 +85,15 @@
   transition: 0.4s ease-in all;
 }
 
-.cover__button:hover,
-.cover__background:hover {
+.cover__button:hover {
   background: #0063d2;
 }
 
 @media screen and (max-width: 1001px) {
+  .cover__container {
+    max-width: 768px;
+  }
+
   .cover__background {
     width: 100%;
     min-height: 746px;
@@ -94,6 +102,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .cover__container {
+    max-width: 321.26px;
+  }
   .cover__background {
     width: 100%;
     min-height: 254px;
